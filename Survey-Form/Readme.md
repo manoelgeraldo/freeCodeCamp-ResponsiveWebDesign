@@ -5,4 +5,4 @@
 
 [View Page](https://codepen.io/manoelgeraldo/pen/gOLbxYv)
 
-![](https://github.com/manoelgeraldo/freeCodeCamp-ResponsiveWebDesign/blob/main/Tribute-Page/github/survey-form.gif)
+![](https://github.com/manoelgeraldo/freeCodeCamp-ResponsiveWebDesign/tree/main/Survey-Form/github)
