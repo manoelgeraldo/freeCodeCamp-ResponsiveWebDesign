@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentação</title>
+    <title>JavaScript Documentação</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav id="navbar">
-        <header>JS Documentação</header>
+        <header>JavaScript</header>
         <ul>
             <li><a class="nav-link" href="#Introdução">Introdução</a></li>
             <li>
@@ -82,16 +82,16 @@
         <section class="main-section" id="O_que_você_deve_realmente_saber">
             <header>O que você deve realmente saber</header>
             <article>
-                <p>This guide assumes you have the following basic background:</p>
+                <p>Este guia pressupõe que você tenha os seguintes conhecimentos básicos:</p>
 
                 <ul>
                     <li>
-                        A general understanding of the Internet and the World Wide Web (WWW).
+                        Uma compreensão geral da Internet e da World Wide Web (WWW).
                     </li>
-                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>Bons conhecimentos de HyperText Markup Language (HTML).</li>
                     <li>
-                        Some programming experience. If you are new to programming, try one of
-                        the tutorials linked on the main page about JavaScript.
+                        Alguma experiência de programação. Se você é novo em programação, 
+                        tente um dos tutoriais com links na página principal sobre JavaScript.
                     </li>
                 </ul>
             </article>
@@ -100,83 +100,64 @@
             <header>JavaScript e Java</header>
             <article>
                 <p>
-                    JavaScript and Java are similar in some ways but fundamentally different
-                    in some others. The JavaScript language resembles Java but does not have
-                    Java's static typing and strong type checking. JavaScript follows most
-                    Java expression syntax, naming conventions and basic control-flow
-                    constructs which was the reason why it was renamed from LiveScript to
-                    JavaScript.
+                    JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferentes em alguns outros. A linguagem JavaScript se assemelha a Java, mas não possui tipagem estática e verificação de tipo forte de Java. JavaScript segue a maioria da sintaxe de expressão Java, convenções de nomenclatura e fluxo de controle básico
+                    constrói que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
                 </p>
 
                 <p>
-                    In contrast to Java's compile-time system of classes built by
-                    declarations, JavaScript supports a runtime system based on a small
-                    number of data types representing numeric, Boolean, and string values.
-                    JavaScript has a prototype-based object model instead of the more common
-                    class-based object model. The prototype-based model provides dynamic
-                    inheritance; that is, what is inherited can vary for individual objects.
-                    JavaScript also supports functions without any special declarative
-                    requirements. Functions can be properties of objects, executing as
-                    loosely typed methods.
+                    Em contraste com o sistema de classes de tempo de compilação do Java construído por declarações, o JavaScript oferece suporte a um sistema de tempo de execução baseado em um pequeno número de tipos de dados que representam valores numéricos, booleanos e de string. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto baseado em classe mais comum. O modelo baseado em protótipo fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente tipados.
                 </p>
                 <p>
-                    JavaScript is a very free-form language compared to Java. You do not
-                    have to declare all variables, classes, and methods. You do not have to
-                    be concerned with whether methods are public, private, or protected, and
-                    you do not have to implement interfaces. Variables, parameters, and
-                    function return types are not explicitly typed.
+                    JavaScript é uma linguagem de formato muito livre em comparação com Java. Você não precisa declarar todas as variáveis, classes e métodos. Você não precisa se preocupar se os métodos são públicos, privados ou protegidos e não precisa implementar interfaces. Variáveis, parâmetros e tipos de retorno de função não são digitados explicitamente.
                 </p>
             </article>
         </section>
         <section class="main-section" id="Hello_world">
             <header>Hello world</header>
             <article>
-                To get started with writing JavaScript, open the Scratchpad and write your
-                first "Hello world" JavaScript code:
+                Para começar a escrever JavaScript, abra o Scratchpad e escreva seu primeiro código JavaScript "Hello world":
                 <code>function greetMe(yourName) { alert("Hello " + yourName); }
             greetMe("World");
           </code>
 
-                Select the code in the pad and hit Ctrl+R to watch it unfold in your
-                browser!
+          Selecione o código no teclado e pressione Ctrl + R para vê-lo se desenrolar no seu navegador!
             </article>
         </section>
         <section class="main-section" id="Variáveis">
             <header>Variáveis</header>
             <p>
-                You use variables as symbolic names for values in your application. The
-                names of variables, called identifiers, conform to certain rules.
+                Você usa variáveis ​​como nomes simbólicos para valores em seu aplicativo. Os nomes das variáveis, chamados identificadores, obedecem a certas regras.
             </p>
             <p>
-                A JavaScript identifier must start with a letter, underscore (_), or
-                dollar sign ($); subsequent characters can also be digits (0-9). Because
-                JavaScript is case sensitive, letters include the characters "A" through
-                "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                Um identificador JavaScript deve começar com uma letra, sublinhado (_) ou
+                cifrão ($); os caracteres subsequentes também podem ser dígitos (0-9). Porque
+                JavaScript diferencia maiúsculas de minúsculas, as letras incluem os caracteres de "A" a
+                "Z" (maiúsculas) e os caracteres "a" a "z" (minúsculas).
             </p>
             <p>
-                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-                You can also use the Unicode escape sequences as characters in
-                identifiers. Some examples of legal names are Number_hits, temp99, and
-                _name.
+                Você pode usar letras ISO 8859-1 ou Unicode, como å e ü nos identificadores.
+                Você também pode usar as sequências de escape Unicode como caracteres em
+                identificadores. Alguns exemplos de nomes legais são Number_hits, temp99 e
+                _nome.
             </p>
         </section>
         <section class="main-section" id="Declarando_variáveis">
             <header>Declarando variáveis</header>
             <article>
-                You can declare a variable in three ways:
+                Você pode declarar uma variável de três maneiras:
                 <p>
-                    With the keyword var. For example, <code>var x = 42.</code> This syntax
-                    can be used to declare both local and global variables.
+                    Com a palavra-chave var. Por exemplo, <code>var x = 42.</code> Esta sintaxe
+                    pode ser usado para declarar variáveis ​​locais e globais.
                 </p>
                 <p>
-                    By simply assigning it a value. For example, <code>x = 42.</code> This
-                    always declares a global variable. It generates a strict JavaScript
-                    warning. You shouldn't use this variant.
+                    Simplesmente atribuindo a ele um valor. Por exemplo, <code>x = 42.</code> este
+                    sempre declara uma variável global. Ele gera um JavaScript restrito
+                    Atenção. Você não deve usar esta variante.
                 </p>
                 <p>
-                    With the keyword let. For example,<code> let y = 13.</code> This syntax
-                    can be used to declare a block scope local variable. See Variable scope
-                    below.
+                    Com a palavra-chave let. Por exemplo, <code> let y = 13.</code> Esta sintaxe
+                    pode ser usado para declarar uma variável local de escopo de bloco. Veja o escopo da variável
+                    abaixo.
                 </p>
             </article>
         </section>
@@ -184,24 +165,24 @@
             <header>Escopo das variáveis</header>
             <article>
                 <p>
-                    When you declare a variable outside of any function, it is called a
-                    global variable, because it is available to any other code in the
-                    current document. When you declare a variable within a function, it is
-                    called a local variable, because it is available only within that
-                    function.
+                    Quando você declara uma variável fora de qualquer função, ela é chamada de
+                    variável global, porque está disponível para qualquer outro código no
+                    documento atual. Quando você declara uma variável dentro de uma função, é
+                    chamada de variável local, porque está disponível apenas dentro daquele
+                    função.
                 </p>
 
                 <p>
-                    JavaScript before ECMAScript 2015 does not have block statement scope;
-                    rather, a variable declared within a block is local to the function (or
-                    global scope) that the block resides within. For example the following
-                    code will log 5, because the scope of x is the function (or global
-                    context) within which x is declared, not the block, which in this case
-                    is an if statement.
+                    JavaScript anterior ao ECMAScript 2015 não tem escopo de instrução de bloco;
+                    em vez disso, uma variável declarada dentro de um bloco é local para a função (ou
+                    escopo global) no qual o bloco reside. Por exemplo o seguinte
+                    código irá logar 5, porque o escopo de x é a função (ou global
+                    contexto) dentro do qual x é declarado, não o bloco, que neste caso
+                    é uma declaração if.
                 </p>
                 <code>if (true) { var x = 5; } console.log(x); // 5</code>
                 <p>
-                    This behavior changes, when using the let declaration introduced in
+                    Este comportamento muda, ao usar a declaração let introduzida em
                     ECMAScript 2015.
                 </p>
 
@@ -213,16 +194,16 @@
             <header>Variáveis globais</header>
             <article>
                 <p>
-                    Global variables are in fact properties of the global object. In web
-                    pages the global object is window, so you can set and access global
-                    variables using the window.variable syntax.
+                    Variáveis ​​globais são na verdade propriedades do objeto global. Na web
+                    páginas, o objeto global é a janela, para que você possa definir e acessar
+                    variáveis ​​usando a sintaxe window.variable.
                 </p>
 
                 <p>
-                    Consequently, you can access global variables declared in one window or
-                    frame from another window or frame by specifying the window or frame
-                    name. For example, if a variable called phoneNumber is declared in a
-                    document, you can refer to this variable from an iframe as
+                    Consequentemente, você pode acessar variáveis ​​globais declaradas em uma janela ou
+                    quadro de outra janela ou quadro, especificando a janela ou quadro
+                    nome. Por exemplo, se uma variável chamada phoneNumber for declarada em um
+                    documento, você pode se referir a esta variável de um iframe como
                     parent.phoneNumber.
                 </p>
             </article>
@@ -231,105 +212,107 @@
             <header>Constantes</header>
             <article>
                 <p>
-                    You can create a read-only, named constant with the const keyword. The
-                    syntax of a constant identifier is the same as for a variable
-                    identifier: it must start with a letter, underscore or dollar sign and
-                    can contain alphabetic, numeric, or underscore characters.
+                    Você pode criar uma constante somente leitura, denominada constante com a palavra-chave const. o
+                    a sintaxe de um identificador constante é a mesma de uma variável
+                    identificador: deve começar com uma letra, sublinhado ou cifrão e
+                    pode conter caracteres alfabéticos, numéricos ou sublinhados.
                 </p>
 
                 <code>const PI = 3.14;</code>
                 <p>
-                    A constant cannot change value through assignment or be re-declared
-                    while the script is running. It has to be initialized to a value.
+                    Uma constante não pode mudar o valor por meio de atribuição ou ser declarada novamente
+                    enquanto o script está em execução. Ele deve ser inicializado com um valor.
                 </p>
 
                 <p>
-                    The scope rules for constants are the same as those for let block scope
-                    variables. If the const keyword is omitted, the identifier is assumed to
-                    represent a variable.
+                    As regras de escopo para constantes são as mesmas para permitir o escopo do bloco
+                    variáveis. Se a palavra-chave const for omitida, o identificador será considerado
+                    representam uma variável.
                 </p>
 
                 <p>
-                    You cannot declare a constant with the same name as a function or
-                    variable in the same scope. For example:
+                    Você não pode declarar uma constante com o mesmo nome de uma função ou
+                    variável no mesmo escopo. Por exemplo:
                 </p>
 
                 <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
             CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
             }</code>
-                However, object attributes are not protected, so the following statement
-                is executed without problems.
+                No entanto, os atributos do objeto não são protegidos, então a seguinte instrução
+                é executado sem problemas.
                 <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
             </article>
         </section>
         <section class="main-section" id="Tipos_de_dados">
             <header>Tipos de dados</header>
             <article>
-                <p>The latest ECMAScript standard defines seven data types:</p>
+                <p>O padrão ECMAScript mais recente define sete tipos de dados:
+                </p>
                 <ul>
                     <li>
-                        <p>Six data types that are primitives:</p>
+                        <p>Seis tipos de dados que são primitivos:
+                        </p>
                         <ul>
-                            <li>Boolean. true and false.</li>
+                            <li>Boolean. verdadeiro e falso.</li>
                             <li>
-                                null. A special keyword denoting a null value. Because JavaScript
-                                is case-sensitive, null is not the same as Null, NULL, or any
-                                other variant.
+                                Null. Uma palavra-chave especial denotando um valor nulo. Porque JavaScript
+                                faz distinção entre maiúsculas e minúsculas, nada não é o mesmo que Nulo, NULL ou qualquer
+                                outra variante.
                             </li>
-                            <li>undefined. A top-level property whose value is undefined.</li>
-                            <li>Number. 42 or 3.14159.</li>
-                            <li>String. "Howdy"</li>
+                            <li>Undefined. Uma propriedade de nível superior cujo valor é indefinido.</li>
+                            <li>Number. 42 ou 3.14159.</li>
+                            <li>String. "Olá"</li>
                             <li>
-                                Symbol (new in ECMAScript 2015). A data type whose instances are
-                                unique and immutable.
+                                Symbol (novo no ECMAScript 2015). Um tipo de dados cujas instâncias são
+                                único e imutável.
                             </li>
                         </ul>
                     </li>
 
-                    <li>and Object</li>
+                    <li>e Objetos</li>
                 </ul>
-                Although these data types are a relatively small amount, they enable you
-                to perform useful functions with your applications. Objects and functions
-                are the other fundamental elements in the language. You can think of
-                objects as named containers for values, and functions as procedures that
-                your application can perform.
+                Embora esses tipos de dados sejam uma quantidade relativamente pequena, eles permitem que você
+                para executar funções úteis com seus aplicativos. Objetos e funções
+                são os outros elementos fundamentais da linguagem. Você pode pensar em
+                objetos como recipientes nomeados para valores e funções como procedimentos que
+                seu aplicativo pode executar.
             </article>
         </section>
         <section class="main-section" id="Laço_de_repetição_if_e_else">
             <header>Laço de repetição if e else</header>
             <article>
-                Use the if statement to execute a statement if a logical condition is
-                true. Use the optional else clause to execute a statement if the condition
-                is false. An if statement looks as follows:
+                Use a instrução if para executar uma instrução se uma condição lógica for
+                verdade. Use a cláusula opcional else para executar uma instrução se a condição
+                é falso. Uma declaração if tem a seguinte aparência:
 
                 <code>if (condition) { statement_1; } else { statement_2; }</code>
-                condition can be any expression that evaluates to true or false. See
-                Boolean for an explanation of what evaluates to true and false. If
-                condition evaluates to true, statement_1 is executed; otherwise,
-                statement_2 is executed. statement_1 and statement_2 can be any statement,
-                including further nested if statements.
+                condição pode ser qualquer expressão avaliada como verdadeira ou falsa. Vejo
+                Booleano para uma explicação do que é avaliado como verdadeiro e falso. E se
+                condição avaliada como verdadeira, instrução_1 é executada; de outra forma,
+                instrução_2 é executada. declaração_1 e declaração_2 podem ser qualquer declaração,
+                incluindo outras instruções if aninhadas.
                 <p>
-                    You may also compound the statements using else if to have multiple
-                    conditions tested in sequence, as follows:
+                    Você também pode compor as instruções usando else se tiver vários
+                    condições testadas em sequência, como segue:
                 </p>
                 <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
             } else if (condition_n) { statement_n; } else { statement_last; }
           </code>
-                In the case of multiple conditions only the first logical condition which
-                evaluates to true will be executed. To execute multiple statements, group
-                them within a block statement ({ ... }) . In general, it's good practice
-                to always use block statements, especially when nesting if statements:
+          No caso de várias condições, apenas a primeira condição lógica que
+          avaliado como verdadeiro será executado. Para executar várias instruções, agrupe
+          -los dentro de uma instrução de bloco ({...}). Em geral, é uma boa prática
+          sempre usar instruções de bloco, especialmente ao aninhar instruções if:
 
                 <code>if (condition) { statement_1_runs_if_condition_is_true;
             statement_2_runs_if_condition_is_true; } else {
             statement_3_runs_if_condition_is_false;
             statement_4_runs_if_condition_is_false; }</code>
-                It is advisable to not use simple assignments in a conditional expression,
-                because the assignment can be confused with equality when glancing over
-                the code. For example, do not use the following code:
-                <code>if (x = y) { /* statements here */ }</code> If you need to use an
-                assignment in a conditional expression, a common practice is to put
-                additional parentheses around the assignment. For example:
+                É aconselhável não usar atribuições simples em uma expressão condicional,
+                porque a atribuição pode ser confundida com igualdade ao olhar para cima
+                o código. Por exemplo, não use o seguinte código:
+                <code>if (x = y) { /* statements here */ }</code> Se você precisar usar um
+                atribuição em uma expressão condicional, uma prática comum é colocar
+                parênteses adicionais em torno da tarefa. Por exemplo:
 
                 <code>if ((x = y)) { /* statements here */ }</code>
             </article>
@@ -337,80 +320,82 @@
         <section class="main-section" id="Laço_de_repetição_while">
             <header>Laço de repetição while</header>
             <article>
-                A while statement executes its statements as long as a specified condition
-                evaluates to true. A while statement looks as follows:
+                Uma instrução while executa suas instruções enquanto uma condição especificada
+                avalia como verdadeiro. Uma declaração while tem a seguinte aparência:
 
-                <code>while (condition) statement</code> If the condition becomes false,
-                statement within the loop stops executing and control passes to the
-                statement following the loop.
+                <code>while (condition) statement</code> Se a condição se tornar falsa,
+                instrução dentro do loop para a execução e o controle passa para o
+                declaração seguindo o loop.
 
                 <p>
-                    The condition test occurs before statement in the loop is executed. If
-                    the condition returns true, statement is executed and the condition is
-                    tested again. If the condition returns false, execution stops and
-                    control is passed to the statement following while.
+                    O teste de condição ocorre antes que a instrução no loop seja executada. E se
+                    a condição retorna verdadeira, a instrução é executada e a condição é
+                    testado novamente. Se a condição retornar falsa, a execução para e
+                    o controle é passado para a instrução seguinte ao while.
                 </p>
 
                 <p>
-                    To execute multiple statements, use a block statement ({ ... }) to group
-                    those statements.
+                    Para executar várias instruções, use uma instrução em bloco ({...}) para agrupar
+                    essas declarações.
                 </p>
 
-                Example:
+                Exemplo:
 
-                <p>The following while loop iterates as long as n is less than three:</p>
+                <p>O seguinte loop while itera, desde que n seja menor que três:
+                </p>
 
                 <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
                 <p>
-                    With each iteration, the loop increments n and adds that value to x.
-                    Therefore, x and n take on the following values:
+                    Com cada iteração, o loop incrementa n e adiciona esse valor a x.
+                    Portanto, x e n assumem os seguintes valores:
                 </p>
 
                 <ul>
-                    <li>After the first pass: n = 1 and x = 1</li>
-                    <li>After the second pass: n = 2 and x = 3</li>
-                    <li>After the third pass: n = 3 and x = 6</li>
+                    <li>Após a primeira passagem: n = 1 and x = 1</li>
+                    <li>Após a segunda passagem: n = 2 and x = 3</li>
+                    <li>Após a terceira passagem: n = 3 and x = 6</li>
                 </ul>
                 <p>
-                    After completing the third pass, the condition n &lt; 3 is no longer
-                    true, so the loop terminates.
+                    Depois de concluir a terceira passagem, a condição n & lt; 3 não é mais
+                    verdadeiro, então o loop termina.
                 </p>
             </article>
         </section>
         <section class="main-section" id="Declarando_funções">
             <header>Declarando funções</header>
             <article>
-                A function definition (also called a function declaration, or function
-                statement) consists of the function keyword, followed by:
+                Uma definição de função (também chamada de declaração de função ou função
+                declaração) consiste na palavra-chave da função, seguida por:
 
                 <ul>
-                    <li>The name of the function.</li>
+                    <li>O nome das Funções.</li>
                     <li>
-                        A list of arguments to the function, enclosed in parentheses and
-                        separated by commas.
+                        Uma lista de argumentos para a função, colocados entre parênteses e
+                        separados por vírgulas.
                     </li>
                     <li>
-                        The JavaScript statements that define the function, enclosed in curly
-                        brackets, { }.
+                        As instruções JavaScript que definem a função, entre curvas
+                        colchetes, {}.
                     </li>
                 </ul>
                 <p>
-                    For example, the following code defines a simple function named square:
+                    Por exemplo, o código a seguir define uma função simples chamada square:
+
                 </p>
 
                 <code>function square(number) { return number * number; }</code>
                 <p>
-                    The function square takes one argument, called number. The function
-                    consists of one statement that says to return the argument of the
-                    function (that is, number) multiplied by itself. The return statement
-                    specifies the value returned by the function.
+                    O quadrado da função leva um argumento, chamado número. A função
+                    consiste em uma declaração que diz para retornar o argumento do
+                    função (ou seja, número) multiplicada por ela mesma. A declaração de retorno
+                    especifica o valor retornado pela função.
                 </p>
                 <code>return number * number;</code>
                 <p>
-                    Primitive parameters (such as a number) are passed to functions by
-                    value; the value is passed to the function, but if the function changes
-                    the value of the parameter, this change is not reflected globally or in
-                    the calling function.
+                    Parâmetros primitivos (como um número) são passados ​​para funções por
+                    valor; o valor é passado para a função, mas se a função mudar
+                    o valor do parâmetro, esta mudança não é refletida globalmente ou em
+                    a função de chamada.
                 </p>
             </article>
         </section>
@@ -419,7 +404,7 @@
             <article>
                 <ul>
                     <li>
-                        All the documentation in this page is taken from
+                        Toda a documentação nesta página é retirada de
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
                     </li>
                 </ul>
